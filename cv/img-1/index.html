@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV template #1</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="dev-scene">
+  <div class="page dev-scene__block">
+
+    <header class="header__wrap page__row  page__column">
+
+
+      <div class="header__logo">
+        <span class="logo__text">Rubrush</span>
+      </div>
+      <div class="header__menu">
+        <!-- .navigation>nav>ul.navigation__list>(li.navigation__item.navigation__item--active>a.navigation__link>span.navigation__text)+li.navigation__item*6>a.navigation__link>span.navigation__text -->
+        <div class="navigation">
+          <nav>
+            <ul class="navigation__list zero__out-space">
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:13px;">link</span></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:13px;">link</span></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:19px;">link</span></a>
+              </li>
+              <li class="navigation__item  navigation__item--active">
+                <a href="" class="navigation__link "><span class="navigation__text">current</span></a>
+                <!--style="width:22px;"-->
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:28px;">link</span></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:11px;">link</span></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link"><span class="navigation__text" style="width:20px;">link</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- / -->
+    </header>
+
+    <div class="main__wrap">
+      <main>
+        <!-- .main__section>section -->
+        <div class="main__section">
+          <section>
+            <div class="hero__wrap">
+              <!-- .hero__content>.page--media-width>.hero__title{Hero title}+.hero__sub-title{hero subtitle}+.hero__actions>button.btn-basic--fill{accented action}+button.btn-basic{custom action} -->
+              <div class="hero__placement hero__placement--ave">
+                <div class="page__row">
+                  <div class="hero__ave">
+                    <div class="hero__title">Hi! I`m Sojib mahabub</div>
+                    <div class="hero__sub-title">I am <span class="hero__sub-title--bold">a Graphic
+                        Designer</span></div>
+                    <div class="hero__actions">
+                      <button class="btn btn-solid">accented action</button>
+                      <button class="btn btn-ghost">custom
+                        action</button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- /abbr -->
+              <!-- .hero__image -->
+              <div class="hero__placement hero__placement--avatar">
+                <img class="hero__avatar" src="./img/avatar_345_310.png" alt="avatar">
+              </div>
+            </div>
+            <!-- /.hero -->
+          </section>
+        </div>
+        <!-- /-->
+      </main>
+    </div>
+    <div class="footer__wrap"><img class='dev__source-img' src="./img/markup-etalone-img.jpg" alt=""></div>
+  </div>
+  <!-- / -->
+  </div>
+  <div class="dev-scene__control">
+    <h6>Размеры</h6>
+    <div class="dev-scene__block-control">
+      <button class="scale" data-scale="1">origin (533x394)</button>
+      <button class="scale" data-scale="1.92">192% (1024x760)</button>
+      <button class="scale" data-scale="2.26">226% (1200x890)</button>
+      <button class="scale" data-scale="3">300% (1600x1182)</button>
+      <button class="scale" data-scale="3.61">361% (1920x1422)</button>
+    </div>
+    <h6>Прозрачность</h6>
+    <div class="dev-scene__block-control">
+      <button class="opacity" data-opacity="0">прозора</button>
+      <button class="opacity" data-opacity="0.5">половина</button>
+      <button class="opacity" data-opacity="1">не прозора</button>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
