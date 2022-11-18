@@ -10,103 +10,190 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="dev-scene">
+  <div class="dev-scene__container js__dev-scene-container">
+    <div class="page page__wrap dev-scene__page-container">
 
-  <div class="dev-scene__innerbox">
-    <div class="page dev-scene__page js__dev-scene-page">
+      <!-- page -->
+      <header>
+        <div class="header__wrap page__row dev-mark">
+          <!-- .header__logo+.header__menu -->
+          <div class="header__logo">
+            <img src="" alt="Alex Smith avatar" class="logo__img" /><span class="logo__text">Alex Smith</span>
+            <!-- / -->
+          </div>
+          <div class="header__menu">
+            <!-- .navigation>nav>ul.navigation__list>li.navigation__item*>a.navigation__link -->
+            <div class="navigation">
+              <nav>
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link navigation__link--active">
+                      About Me</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link">Resume</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link">Portfolo</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link">Blog</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link">Contact</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link">Get it Now</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-      <header class="header__wrap page__row  page__column">
-
-
-        <div class="header__logo">
-          <span class="logo__text">Rubrush</span>
-        </div>
-        <div class="header__menu">
-          <!-- .navigation>nav>ul.navigation__list>(li.navigation__item.navigation__item--active>a.navigation__link>span.navigation__text)+li.navigation__item*6>a.navigation__link>span.navigation__text -->
-          <div class="navigation">
-            <nav>
-              <ul class="navigation__list zero__out-space">
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:13px;">link</span></a>
-                </li>
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:13px;">link</span></a>
-                </li>
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:19px;">link</span></a>
-                </li>
-                <li class="navigation__item  navigation__item--active">
-                  <a href="" class="navigation__link "><span class="navigation__text" </span>current</span></a>
-                  <!--style="width:22px;"-->
-                </li>
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:28px;">link</span></a>
-                </li>
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:11px;">link</span></a>
-                </li>
-                <li class="navigation__item">
-                  <a href="" class="navigation__link"><span class="navigation__text" style="width:20px;">link</span></a>
-                </li>
-              </ul>
-            </nav>
+            <!--  -->
           </div>
           <!-- / -->
+        </div>
       </header>
 
       <div class="main__wrap">
         <main>
-          <!-- .main__section>section -->
+          <!-- .main__section>section>.hero>.hero__content+.hero__image -->
           <div class="main__section">
             <section>
-              <div class="hero__wrap">
-                <!-- .hero__content>.page--media-width>.hero__title{Hero title}+.hero__sub-title{hero subtitle}+.hero__actions>button.btn-basic--fill{accented action}+button.btn-basic{custom action} -->
-                <div class="hero__placement hero__placement--ave">
-                  <div class="page__row">
-                    <div class="hero__ave">
-                      <div class="hero__title">Hi! I`m Sojib mahabub</div>
-                      <div class="hero__sub-title">I am <span class="hero__sub-title--bold">a Graphic
-                          Designer</span></div>
-                      <div class="hero__actions">
-                        <button class="btn btn-solid">accented action</button>
-                        <button class="btn btn-ghost">custom
-                          action</button>
-                      </div>
-
-                    </div>
+              <div class="hero">
+                <div class="hero__content">
+                  <!-- .hero__title>{Frontend Developer}+.txt__h1{Alex Smith}^p.hero__text>Lorem^.hero__actions -->
+                  <h1 class="hero__title">
+                    Frontend Developer
+                    <div class="txt__h1">Alex Smith</div>
+                  </h1>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore ipsam minima ducimus molestias ea odit animi dicta
+                    doloremque incidunt aliquam nam, saepe tempore impedit
+                    ratione iusto sed. Voluptatem, alias totam?
+                  </p>
+                  <div class="hero__actions">
+                    <!-- button.btn__ghost--accent{Download CV}+button.btn__ghost{Contact} -->
+                    <button class="btn__ghost--accent">Download CV</button><button class="btn__ghost">Contact</button>
+                    <!-- / -->
                   </div>
-
+                  <!-- / -->
                 </div>
-                <!-- /abbr -->
-                <!-- .hero__image -->
-                <div class="hero__placement hero__placement--avatar">
-                  <img class="hero__avatar" src="./img/avatar_345_310.png" alt="avatar">
+                <div class="hero__image">
+                  <img src="#" alt="Hero avatar" class="avatar" />
                 </div>
               </div>
-              <!-- /.hero -->
             </section>
+            <!-- / -->
           </div>
-          <!-- /-->
+
+          <div class="main__section">
+            <section>
+              <!-- .skill>.skill__title>h2.text__h2^.skill__content-->
+              <div class="skill">
+                <div class="skill__title">
+                  <h2 class="text__h2">What i do</h2>
+                </div>
+                <div class="skill__content">
+                  <!--
+                           Copywrite
+                        Ecommerce
+                        Web Design
+                        Marketing
+                        -->
+                  <!-- ul.grid__container>li.grid__item*>.feature-card>img.feature-card__icon[alt=$# src=]+h3.feature-card__title{$#}+p.feature-card__text -f-> -->
+
+                  <ul class="grid__container">
+                    <li class="grid__item">
+                      <div class="feature-card">
+                        <img src="" alt="Copywrite" class="feature-card__icon" />
+                        <h3 class="feature-card__title">Copywrite</h3>
+                        <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                          dicta
+                          minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis
+                          assumenda
+                          officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                      </div>
+                    </li>
+                    <li class="grid__item">
+                      <div class="feature-card">
+                        <img src="" alt="Ecommerce" class="feature-card__icon" />
+                        <h3 class="feature-card__title">Ecommerce</h3>
+                        <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                          dicta
+                          minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis
+                          assumenda
+                          officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                      </div>
+                    </li>
+                    <li class="grid__item">
+                      <div class="feature-card">
+                        <img src="" alt="Web Design" class="feature-card__icon" />
+                        <h3 class="feature-card__title">Web Design</h3>
+                        <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                          dicta
+                          minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis
+                          assumenda
+                          officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                      </div>
+                    </li>
+                    <li class="grid__item">
+                      <div class="feature-card">
+                        <img src="" alt="Marketing" class="feature-card__icon" />
+                        <h3 class="feature-card__title">Marketing</h3>
+                        <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                          dicta
+                          minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis
+                          assumenda
+                          officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- / -->
+            </section>
+            <!-- section>.skill>.skill__title>h2.text__h2{Testimonials} -->
+            <section>
+              <div class="skill">
+                <div class="skill__title">
+                  <h2 class="text__h2">Testimonials</h2>
+                </div>
+              </div>
+            </section>
+            <!--  -->
+          </div>
+
+          <!-- / -->
         </main>
       </div>
-      <div class="footer__wrap"></div>
+
+      <div class="footer__wrap">
+        <footer></footer>
+      </div>
+      <!-- page -->
+
     </div>
-    <img class='dev-scene__image js__dev-scene-image' src="./img/maket-img--view-blocks-503x388.jpg" alt="">
-  </div>
+
+    <img class="dev-scene__image js__dev-scene-image" src="./img/maket-img--view-blocks-503x388.jpg" alt="" />
 
   </div>
+
   <div class="dev-scene__control js__dev-scene-page-control">
     <h6>Размеры</h6>
     <div class="dev-scene__block-control">
       <button class="scale" data-scale="1">origin (533x394)</button>
+
       <button class="scale" data-scale="1.92">192% (1024x760)</button>
       <button class="scale" data-scale="2.26">226% (1200x890)</button>
       <button class="scale" data-scale="3">300% (1600x1182)</button>
@@ -119,7 +206,9 @@
       <button class="opacity" data-opacity="1">не прозора</button>
     </div>
   </div>
+
 </body>
+
 <script src="./script.js"></script>
 
 </html>
