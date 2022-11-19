@@ -1,4 +1,4 @@
-const scaleSorceRef = document.querySelector('.js__dev-scene-container');
+const scaleSorceRef = document.querySelector('.js__dev-scene-image');
 const opacitySorceceRef = document.querySelector('.js__dev-scene-image');
 const controlPanel = document.querySelector('.js__dev-scene-page-control');
 // console.log(scaleDivREf.style);
