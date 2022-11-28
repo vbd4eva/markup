@@ -1,0 +1,73 @@
+:root {
+    --color-transparent: transparent;
+    --color-black: rgb(0 0 0);
+    --color-white: #fff;
+    --color-crimson: rgb(237 20 61);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior-y: contain;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    /* decor */
+    background-color: var(--color-black);
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 35px 0;
+    z-index: 99;
+}
+
+/* hide-panel */
+.hide-panel {
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: var(--color-white);
+    height: 62px;
+    transition: transform .8s cubic-bezier(.4, 0, .2, 1);
+}
+
+.hide-panel__header {
+    top: 0;
+    transform: translateY(-200%);
+    /* decor */
+    background: linear-gradient(0deg, var(--color-transparent) 0, var(--color-crimson) 100%);
+}
+
+.hide-panel__footer {
+    bottom: 0;
+    transform: translateY(200%);
+    /* decor */
+    background: linear-gradient(0deg, var(--color-crimson) 0, var(--color-transparent) 100%);
+}
+
+.hide-panel--active {
+    transform: translateY(0);
+}
+
+
+/* main */
+.main {}
+
+/* footer */
+.footer {}
