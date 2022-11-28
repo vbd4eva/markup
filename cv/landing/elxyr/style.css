@@ -38,6 +38,8 @@ html {
 }
 
 /* hide-panel */
+/* the handler is "hide-panel.js" */
+/*to JS engine needs mark element.js__hide-panel */
 .hide-panel {
     position: absolute;
     right: 0;
@@ -61,7 +63,7 @@ html {
     background: linear-gradient(0deg, var(--color-crimson) 0, var(--color-transparent) 100%);
 }
 
-.hide-panel--active {
+.hide-panel--show {
     transform: translateY(0);
 }
 
