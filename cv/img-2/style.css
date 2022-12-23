@@ -168,7 +168,7 @@
 }
 
 /* Main */
-/* Content ----------------------- */
+/* Content -----------------------block */
 .content__row {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -178,7 +178,7 @@
 
 }
 
-/* Hero ----------------------- */
+/* Hero -----------------------section */
 .hero__wrap {
     padding: 6rem 0;
     display: flex;
@@ -218,6 +218,7 @@
     margin: 0;
     padding-top: 3rem;
     font-size: 1rem;
+    font-family: var(--font_unique);
 }
 
 .hero__subtitle {
@@ -232,6 +233,33 @@
 .hero__actions {
     /* padding-top: var(--oneHalf); */
 }
+
+/* Skill -----------------------section */
+.skill {}
+
+.skill__title {
+    position: relative;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    line-height: .8;
+}
+
+.skill__header::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 8px;
+    background: #c9c913;
+    position: absolute;
+    bottom: 0;
+}
+
+.skill__header {
+    font-family: var(--font_unique);
+}
+
+.skill__content {}
 
 /* images */
 .avatar {
@@ -294,6 +322,7 @@ button {}
 }
 
 .text__h1 {
+
     font-size: 4rem;
     line-height: 1;
     letter-spacing: 2px;
