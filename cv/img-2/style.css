@@ -168,14 +168,29 @@
 }
 
 /* Main */
+/* Content ----------------------- */
+.content__row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    margin: 0;
+
+}
+
 /* Hero ----------------------- */
 .hero__wrap {
     padding: 6rem 0;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
-.hero__content {}
+.hero__content {
+    flex-basis: 800px;
+    box-sizing: border-box;
+    padding: 3.6rem 1rem 1rem 3.6rem;
+}
 
 .hero__placement {
     /* position: absolute; */
@@ -192,49 +207,47 @@
     /* padding: var(--oneFifth); */
 }
 
-.hero__placement--avatar {
-    /* bottom: 0; */
-    /* right: 0; */
+
+.hero__block-avatar {
+    padding: 2rem;
 }
 
-.hero__avatar {
-    display: block;
-    width: 480px;
-    /* transform: translateX(18%); */
-}
+
 
 .hero__title {
-    font-size: 0;
+    margin: 0;
+    padding-top: 3rem;
+    font-size: 1rem;
 }
 
-.hero__sub-title {
-    /* line-height: 1.3; */
-    /* font-weight: 400; */
-    /* font-size: .9rem; */
-    /* word-spacing: -var(--oneTenth); */
-    /* color: var(--color_middle); */
+.hero__subtitle {
+    text-transform: uppercase;
+    padding: .2rem;
 }
 
-.hero__sub-title--bold {
-    /* font-weight: 600; */
-    /* font-size: .8rem; */
-    /* letter-spacing: .01rem; */
-    /* word-spacing: -0.05rem; */
+.hero__text {
+    line-height: 2;
 }
 
 .hero__actions {
     /* padding-top: var(--oneHalf); */
 }
 
+/* images */
+.avatar {
+    display: block;
+    width: 480px;
+}
+
 /* Buttons */
 .btn {
     /* reset */
-    /* margin: 0; */
+    margin: 0;
     /* padding: 0; */
     /* border: none; */
-    /* font: inherit; */
-    /* color: inherit; */
-    /* background: none; */
+    font: inherit;
+    color: inherit;
+    background: none;
 }
 
 /* Firefox fix - https://bugzilla.mozilla.org/show_bug.cgi?id=140562 */
@@ -250,18 +263,16 @@ button.btn::-moz-focus-inner {
 /* button:-moz-focusring {
     outline: 1px dotted;
 } */
-button {
-    /* cursor: pointer; */
-}
+button {}
 
 .btn {
-    /* font-size: 0; */
-    /* transform: translate(0px, -8px); */
-    /* background-color: #ed143d69; */
-    /*  */
-    /* height: 0.8rem; */
-    /* width: 2.6rem; */
-    /* border-radius: 1rem; */
+    cursor: pointer;
+    padding: 1rem 2.125rem;
+    border: 0.25rem solid;
+    line-height: 1;
+    border-radius: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .btn::after {
@@ -278,11 +289,16 @@ button {
 }
 
 /* Text */
-.txt--bold {
+.text--bold {
     /* font-weight: 600; */
 }
 
-.txt__h1 {}
+.text__h1 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    word-spacing: -8px;
+}
 
 
 
