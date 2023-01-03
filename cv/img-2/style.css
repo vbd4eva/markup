@@ -31,52 +31,21 @@
     --logo__text--font: var(--font_unique);
 }
 
-/* Page */
+/* Page -----------------------*/
 .page {
     font-family: var(--page--font);
     color: var(--color_dark);
     background-color: var(--color_page);
 }
 
-
-
 .page__row {
     box-sizing: border-box;
-    /* padding-left: var(--oneHalf); */
-    /* padding-right: var(--oneHalf); */
     margin: 0 auto;
     max-width: 1800px;
 }
 
-.page__column {
-    /* padding-top: var(--oneQuart);
-    padding-bottom: var(--oneQuart); */
-}
-
-
-/* 
-*/
-
 /* Header -----------------------*/
-.header__wrap {
-    padding: 2.6rem 0;
-    display: flex;
-    justify-content: space-between;
-    /* position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 99;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between; */
-}
 
-.header__logo {
-    display: flex;
-    align-items: center;
-    padding: 0.8rem 0.6rem;
-}
 
 /* Navigation */
 .navigation__list {
