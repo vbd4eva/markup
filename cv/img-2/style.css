@@ -235,17 +235,21 @@
 }
 
 /* Skill -----------------------section */
-.skill {}
+.skill {
+    outline: 1px solid;
+    padding: 62px 32px 0 30px;
+
+}
 
 .skill__title {
     position: relative;
     margin: 0;
     letter-spacing: 2px;
-    padding-bottom: 1rem;
+    padding: 1rem;
     line-height: .8;
 }
 
-.skill__header::before {
+.skill__title::before {
     content: '';
     display: block;
     width: 3rem;
@@ -257,9 +261,52 @@
 
 .skill__header {
     font-family: var(--font_unique);
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 3px;
 }
 
-.skill__content {}
+.skill__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill__list-item {
+    list-style-type: none;
+    flex-basis: 50%;
+}
+
+/* Feature Card with Icon-----------------------component */
+.feature-card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 23px;
+    padding-left: 96px;
+}
+
+.feature-card__icon {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-color: #ccc;
+}
+
+.feature-card__title {
+    margin: 0;
+    padding: 1rem 0 12px 0;
+    letter-spacing: 1px;
+}
+
+.feature-card__text {
+    margin: 0;
+    width: 100%;
+    line-height: 1.8;
+}
 
 /* images */
 .avatar {
@@ -295,10 +342,10 @@ button {}
 
 .btn {
     cursor: pointer;
-    padding: 1rem 2.125rem;
+    padding: 1rem 2rem;
     border: 0.25rem solid;
     line-height: 1;
-    border-radius: 1.875rem;
+    border-radius: 2rem;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -325,7 +372,7 @@ button {}
 
     font-size: 4rem;
     line-height: 1;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     word-spacing: -8px;
 }
 
