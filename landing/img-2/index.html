@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template #1</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- page -->
+
+        <header>
+            <style>
+                .header__wrap {
+                    position: relative;
+                    padding: 2.6rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .header__logo {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.8rem 0.6rem;
+                }
+            </style>
+
+            <div class="header__wrap page__row dev-mark">
+
+                <div class="header__logo">
+                    <img src="" alt="Alex Smith avatar" class="logo__img" /><span class="logo__text"><span
+                            class="logo__text--bold">Alex</span> Smith</span>
+                    <!-- / -->
+                </div>
+
+                <div class="navigation js-mobile-toggle">
+
+                    <style>
+                        /* Navigation */
+                        .navigation {
+                            position: relative;
+                        }
+
+                        .navigation__list {
+                            list-style-type: none;
+                            display: flex;
+                            margin: 0;
+                            padding: 0 18px;
+                        }
+
+                        .navigation__item {
+                            padding: 1.6rem 0;
+                            margin-left: 69px;
+                        }
+
+                        .navigation__link {
+                            display: block;
+                            text-decoration: none;
+                            color: var(--color_dark);
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            letter-spacing: -.5px;
+                        }
+
+
+
+                        .navigation__toggle-btn {
+                            position: absolute;
+                            display: block;
+                            right: 0;
+                            bottom: 0;
+                            width: 56px;
+                            height: 56px;
+                            background: crimson;
+                            cursor: pointer;
+                            color: transparent;
+                            transition: transform 250ms linear;
+                            transform: translate(0, 0);
+                        }
+
+                        @media screen and (min-width:1200px) {
+                            .navigation__toggle-btn {
+                                transform: translate(100%, 100%);
+                            }
+
+                        }
+
+
+                        [class $='--is-open'].navigation__list {}
+
+                        [class $='--is-open'].navigation__toggle-btn {
+                            background: lime;
+                        }
+                    </style>
+
+                    <script>/*js-mobile-toggle*/
+                        const cssClassMark = {
+                            wrap: 'js-mobile-toggle',
+                            panel: '__panel',
+                            btn: '__btn',
+                            active: '--is-open'
+                        }
+                        document.body.addEventListener('click', e => {
+                            if (!e.target.classList.contains(cssClassMark.wrap + cssClassMark.btn)) return;
+                            const btnRef = e.target;
+                            const wrapRef = btnRef.closest(`.${cssClassMark.wrap}`);
+                            const panelRef = wrapRef.querySelector(`.${cssClassMark.wrap + cssClassMark.panel}`);
+                            panelRef.classList.toggle(cssClassMark.wrap + cssClassMark.panel + cssClassMark.active);
+                            btnRef.classList.toggle(cssClassMark.wrap + cssClassMark.btn + cssClassMark.active);
+                        })
+                    </script>
+
+                    <nav>
+                        <ul class="navigation__list  js-mobile-toggle__panel">
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link navigation__link--active">
+                                    About Me</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Resume</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Portfolo</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Blog</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Contact</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Get it Now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="js-mobile-toggle__btn navigation__toggle-btn btn-reset">show header menu</button>
+
+                </div>
+
+
+
+            </div>
+        </header>
+
+        <main>
+
+            <section>
+                <div class="hero hero__wrap">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <div class="hero__subtitle">Frontend Developer</div>
+                            <div class="content__row text__h1">Alex Smith</div>
+                        </h1>
+                        <p class="content__row hero__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore ipsam minima ducimus molestias ea odit animi dicta
+                            doloremque incidunt aliquam nam, saepe tempore impedit
+                            ratione iusto sed. Voluptatem, alias totam?
+                        </p>
+                        <div class="content__row hero__actions">
+                            <!-- button.btn__ghost--accent{Download CV}+button.btn__ghost{Contact} -->
+                            <button class="btn btn__ghost--accent">Download CV</button>
+                            <button class="btn btn__ghost">Contact</button>
+                            <!-- / -->
+                        </div>
+                        <!-- / -->
+                    </div>
+                    <div class="hero__block-avatar">
+                        <img src="./img/avatar_128_128.png" alt="Hero avatar" class="avatar" />
+                    </div>
+                </div>
+            </section>
+            <!-- / -->
+
+            <!-- <div class="page__row"> -->
+            <section>
+                <!-- .skill>.skill__title skill__header>h2^.skill__content-->
+                <div class="page__row skill">
+
+                    <h2 class="skill__title skill__header">What i do</h2>
+
+
+
+                    <ul class="skill__list">
+                        <li class="skill__list-item">
+                            <div class="feature-card">
+                                <div class="feature-card__icon"></div>
+                                <h3 class="feature-card__title skill__header">Copywrite</h3>
+                                <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Qui
+                                    dicta
+                                    minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias
+                                    officiis
+                                    assumenda
+                                    officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                            </div>
+                        </li>
+                        <li class="skill__list-item">
+                            <div class="feature-card">
+                                <div class="feature-card__icon"></div>
+                                <h3 class="feature-card__title skill__header">Ecommerce</h3>
+                                <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Qui
+                                    dicta
+                                    minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias
+                                    officiis
+                                    assumenda
+                                    officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                            </div>
+                        </li>
+                        <li class="skill__list-item">
+                            <div class="feature-card">
+                                <div class="feature-card__icon"></div>
+                                <h3 class="feature-card__title skill__header">Web Design</h3>
+                                <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Qui
+                                    dicta
+                                    minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias
+                                    officiis
+                                    assumenda
+                                    officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                            </div>
+                        </li>
+                        <li class="skill__list-item">
+                            <div class="feature-card">
+                                <div class="feature-card__icon"></div>
+                                <h3 class="feature-card__title skill__header">Marketing</h3>
+                                <p class="feature-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Qui
+                                    dicta
+                                    minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias
+                                    officiis
+                                    assumenda
+                                    officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+
+                </div>
+                <!-- / -->
+            </section>
+            <!-- section>.skill>.skill__title skill__header>h2{Testimonials} -->
+            <section>
+                <div class="page__row skill">
+
+                    <h2 class="skill__title skill__header ">Testimonials</h2>
+
+                </div>
+            </section>
+            <!--  -->
+            <!-- </div> -->
+
+            <!-- / -->
+        </main>
+
+        <footer>
+            <div class="footer__wrap">
+
+            </div>
+        </footer>
+        <!-- page -->
+
+    </div>
+</body>
+
+
+
+</html>

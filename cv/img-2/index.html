@@ -27,6 +27,7 @@
       <header>
         <style>
           .header__wrap {
+            position: relative;
             padding: 2.6rem 0;
             display: flex;
             justify-content: space-between;
@@ -46,36 +47,101 @@
                 class="logo__text--bold">Alex</span> Smith</span>
             <!-- / -->
           </div>
-          <div class="header__menu">
-            <!-- .navigation>nav>ul.navigation__list>li.navigation__item*>a.navigation__link -->
-            <div class="navigation">
-              <nav>
-                <ul class="navigation__list">
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link navigation__link--active">
-                      About Me</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link">Resume</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link">Portfolo</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link">Blog</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link">Contact</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="" class="navigation__link">Get it Now</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
 
-            <!--  -->
+          <div class="navigation js-mobile-toggle">
+
+            <style>
+              /* Navigation */
+              .navigation {
+                position: relative;
+              }
+
+              .navigation__list {
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+                padding: 0 18px;
+              }
+
+              .navigation__item {
+                padding: 1.6rem 0;
+                margin-left: 69px;
+              }
+
+              .navigation__link {
+                display: block;
+                text-decoration: none;
+                color: var(--color_dark);
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: -.5px;
+              }
+
+              .navigation__toggle-btn {
+                position: absolute;
+                display: block;
+                right: 0;
+                bottom: 0;
+                width: 56px;
+                height: 56px;
+                background: crimson;
+                cursor: pointer;
+                color: transparent;
+                transform: translate(100%, 100%);
+              }
+
+              [class $='--is-open'].navigation__list {}
+
+              [class $='--is-open'].navigation__toggle-btn {
+                background: lime;
+              }
+            </style>
+
+            <script>/*js-mobile-toggle*/
+              const cssClassMark = {
+                wrap: 'js-mobile-toggle',
+                panel: '__panel',
+                btn: '__btn',
+                active: '--is-open'
+              }
+              document.body.addEventListener('click', e => {
+                if (!e.target.classList.contains(cssClassMark.wrap + cssClassMark.btn)) return;
+                const btnRef = e.target;
+                const wrapRef = btnRef.closest(`.${cssClassMark.wrap}`);
+                const panelRef = wrapRef.querySelector(`.${cssClassMark.wrap + cssClassMark.panel}`);
+                panelRef.classList.toggle(cssClassMark.wrap + cssClassMark.panel + cssClassMark.active);
+                btnRef.classList.toggle(cssClassMark.wrap + cssClassMark.btn + cssClassMark.active);
+              })
+            </script>
+
+            <nav>
+              <ul class="navigation__list  js-mobile-toggle__panel">
+                <li class="navigation__item">
+                  <a href="" class="navigation__link navigation__link--active">
+                    About Me</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Resume</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Portfolo</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Blog</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Contact</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Get it Now</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="js-mobile-toggle__btn navigation__toggle-btn btn-reset">show header menu</button>
+
           </div>
+
+
 
         </div>
       </header>
