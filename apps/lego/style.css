@@ -1,0 +1,45 @@
+.lego__view {
+    width: 600px;
+    height: 600px;
+
+
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: #999;
+}
+
+/* BLOCKs */
+.block {
+    position: relative;
+    /* overflow: hidden; */
+    outline: 1px solid rgba(220, 20, 60, 0.5);
+    --block-opacity: .5;
+}
+
+.block__brick {
+    padding: 2em;
+}
+
+.block__brick::after {
+    content: '';
+
+    opacity: var(--block-opacity, 1);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: .25em;
+    background-color: rgb(133 124 233);
+
+    /* box-shadow:
+                        inset 60px 0 120px #f0f,
+                        inset -60px 0 120px #0ff; */
+}

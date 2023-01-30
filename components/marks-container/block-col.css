@@ -1,0 +1,8 @@
+.block__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.block__col::before {
+    --block-opacity: 0;
+}
